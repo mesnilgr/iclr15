@@ -1,5 +1,5 @@
-iclr15
-======
+Ensemble of Generative and Discriminative Techniques for Sentiment Analysis of Movie Reviews
+============================================================================================
 
 This code reproduces the results of the following paper:
 
