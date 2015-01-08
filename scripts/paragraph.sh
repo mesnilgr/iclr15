@@ -4,9 +4,10 @@ gcc word2vec.c -o word2vec -lm -pthread -O3 -march=native -funroll-loops
 
 cat ../data/full-train-pos.txt ../data/full-train-neg.txt ../data/test-pos.txt ../data/test-neg.txt ../data/train-unsup.txt > alldata.txt
 awk 'BEGIN{a=0;}{print "_*" a " " $0; a++;}' < alldata.txt > alldata-id.txt
+shuf alldata-id.txt > alldata-id-shuf.txt
 
-time ./word2vec -train alldata-id.txt -output vectors.txt -cbow 0 -size 100 -window 10 -negative 5 -hs 0 -sample 1e-4 -threads 40 -binary 0 -iter 20 -min-count 1 -sentence-vectors 1
-grep '_\*' vectors.txt > sentence_vectors.txt
+time ./word2vec -train alldata-id-shuf.txt -output vectors.txt -cbow 0 -size 100 -window 10 -negative 5 -hs 1 -sample 1e-3 -threads 40 -binary 0 -iter 20 -min-count 1 -sentence-vectors 1
+grep '_\*' vectors.txt | sed -e 's/_\*//' | sort -n > sentence_vectors.txt
 
 # test
 head sentence_vectors.txt -n 25000 | awk 'BEGIN{a=0;}{if (a<12500) printf "1 "; else printf "-1 "; for (b=1; b<NF; b++) printf b ":" $(b+1) " "; print ""; a++;}' > full-train.txt
@@ -26,7 +27,7 @@ tail -n 2500 full-train.txt >> valid.txt
 ../liblinear-1.96/predict -b 1 valid.txt model.logreg out.logreg
 tail -n 5000 out.logreg > ../scores/PARAGRAPH-VALID
 
-rm alldata.txt alldata-id.txt vectors.txt
+rm alldata.txt alldata-id.txt vectors.txt alldata-id-shuf.txt
 rm full-train.txt test.txt
 rm model.logreg out.logreg
 cd ..
