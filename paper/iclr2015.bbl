@@ -1,0 +1,71 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kneser \& Ney(1995)Kneser and Ney]{Kneser1995}
+Kneser, Reinhard and Ney, Hermann.
+\newblock Improved backing-off for m-gram language modeling.
+\newblock In \emph{Acoustics, Speech, and Signal Processing, 1995. ICASSP-95.,
+  1995 International Conference on}, volume~1, pp.\  181--184. IEEE, 1995.
+
+\bibitem[Le \& Mikolov(2014)Le and Mikolov]{Le2014}
+Le, Quoc~V. and Mikolov, Tomas.
+\newblock Distributed representations of sentences and documents.
+\newblock In \emph{International Conference on Machine Learning}, 2014.
+
+\bibitem[Maas et~al.(2011)Maas, Daly, Pham, Huang, Ng, and Potts]{Maas2011}
+Maas, Andrew~L., Daly, Raymond~E., Pham, Peter~T., Huang, Dan, Ng, Andrew~Y.,
+  and Potts, Christopher.
+\newblock Learning word vectors for sentiment analysis.
+\newblock In \emph{Proceedings of the Annual Meeting of the Association for
+  Computational Linguistics}. Association for Computational Linguistics, 2011.
+
+\bibitem[Mikolov(2012)]{MikolovPhd}
+Mikolov, Tom{\'a}{\v{s}}.
+\newblock \emph{Statistical language models based on neural networks}.
+\newblock PhD thesis, 2012.
+
+\bibitem[Mikolov et~al.(2010)Mikolov, Karafi{\'a}t, Burget, Cernock{\`y}, and
+  Khudanpur]{Mikolov2010}
+Mikolov, Tomas, Karafi{\'a}t, Martin, Burget, Lukas, Cernock{\`y}, Jan, and
+  Khudanpur, Sanjeev.
+\newblock Recurrent neural network based language model.
+\newblock In \emph{INTERSPEECH}, pp.\  1045--1048, 2010.
+
+\bibitem[Pang \& Lee(2008)Pang and Lee]{Pang2008}
+Pang, Bo and Lee, Lillian.
+\newblock Opinion mining and sentiment analysis.
+\newblock \emph{Foundations and trends in information retrieval}, 2\penalty0
+  (1-2):\penalty0 1--135, 2008.
+
+\bibitem[Pascanu et~al.(2012)Pascanu, Mikolov, and Bengio]{Pascanu2012}
+Pascanu, Razvan, Mikolov, Tomas, and Bengio, Yoshua.
+\newblock On the difficulty of training recurrent neural networks.
+\newblock \emph{arXiv preprint arXiv:1211.5063}, 2012.
+
+\bibitem[Socher et~al.(2011)Socher, Pennington, Huang, Ng, and
+  Manning]{Socher2011}
+Socher, Richard, Pennington, Jeffrey, Huang, Eric, Ng, Andrew, and Manning,
+  Christopher~D.
+\newblock Semi-supervised recursive autoencoders for predicting sentiment
+  distributions.
+\newblock \emph{Conference on Empirical Methods in Natural Language
+  Processing}, 2011.
+
+\bibitem[Stolcke et~al.(2002)]{Srilm2002}
+Stolcke, Andreas et~al.
+\newblock Srilm-an extensible language modeling toolkit.
+\newblock In \emph{INTERSPEECH}, 2002.
+
+\bibitem[Wang \& Manning(2012)Wang and Manning]{Wang2012}
+Wang, Sida and Manning, Christopher~D.
+\newblock Baselines and bigrams: Simple, good sentiment and topic
+  classification.
+\newblock In \emph{Proceedings of the 50th Annual Meeting of the Association
+  for Computational Linguistics: Short Papers-Volume 2}, pp.\  90--94.
+  Association for Computational Linguistics, 2012.
+
+\end{thebibliography}
